@@ -13,3 +13,6 @@ printf 'Check if access to apache works via \e]8;;http://$ip_address/\e\\http://
 
 # Check if Apache ist running with the following command
 # sudo systemctl status apache2
+
+# Install php and the php-plugin for apache
+sudo apt -y install php libapache2-mod-php
