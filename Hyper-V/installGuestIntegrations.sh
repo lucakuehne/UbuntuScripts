@@ -2,13 +2,13 @@ echo "Activate the guest integrations tools first in the VM-settings."
 read -p "Press enter to continue."
 
 # Add hv_modules to initramfs-tools modules.
-echo "hv_vmbus" >> /etc/initramfs-tools/modules
-echo "hv_storvsc" >> /etc/initramfs-tools/modules
-echo "hv_blkvsc" >> /etc/initramfs-tools/modules
-echo "hv_netvsc" >> /etc/initramfs-tools/modules
+sudo sh -c 'echo "hv_vmbus" >> /etc/initramfs-tools/modules'
+sudo sh -c 'echo "hv_storvsc" >> /etc/initramfs-tools/modules'
+sudo sh -c 'echo "hv_blkvsc" >> /etc/initramfs-tools/modules'
+sudo sh -c 'echo "hv_netvsc" >> /etc/initramfs-tools/modules'
 
 # Update the apt packages
-sudo apt -y update
+sudo apt update
 
 # Upgrade the apt packages
 sudo apt -y upgrade
