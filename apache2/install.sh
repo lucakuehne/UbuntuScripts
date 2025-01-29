@@ -2,7 +2,7 @@
 sudo apt update
 
 # Install Apache
-sudo apt install apache2
+sudo apt -y install apache2
 
 # Allow Apache in firewall
 sudo ufw allow in "Apache"
