@@ -22,3 +22,5 @@ sudo mysql --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native
 # Run the mysql_secure_installation script
 sudo mysql_secure_installation
 
+# Install php and the php-plugin for mysql
+sudo apt -y install php php-mysql
