@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Activate the guest integrations tools first in the VM-settings."
+echo "Did you activate the guest integrations tools first in the VM-settings?"
 read -p "Press enter to continue."
 
 # Add hv_modules to initramfs-tools modules.
