@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Activate the guest integrations tools first in the VM-settings."
 read -p "Press enter to continue."
 
